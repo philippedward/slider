@@ -55,6 +55,7 @@ video {
   background-image: url(../img/ellipse-1.png);
   background-image: url(../img/ellipse-left.png);
   background-image: url(../img/ellipse-right.png);
+  transition: background-image 0.3s ease; /* Animation fluide pour le changement d'image */
 }
 
 .slider-range {
