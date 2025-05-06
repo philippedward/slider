@@ -11,6 +11,7 @@ a {
 img,
 video {
   display: block;
+  width: 100%;
 }
 
 .text {
@@ -23,7 +24,7 @@ video {
 
 .slider {
   position: relative;
-  display: inline-block;
+  display: block;
 }
 
 .slider-image-before {
