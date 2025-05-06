@@ -34,12 +34,14 @@ video {
   position: absolute;
   top: 37%;
   left: 32%;
+  opacity: 0.5; /* Opacité par défaut */
 }
 
 .slider-text-after {
   position: absolute;
   top: 37%;
   left: 29%;
+  opacity: 0.5; /* Opacité par défaut */
 }
 
 .slider-image-after {
