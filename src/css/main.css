@@ -13,6 +13,14 @@ video {
   display: block;
 }
 
+.text {
+  color: #fff;
+  font-family: Scheherazade;
+  font-size: 60px;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
 .slider {
   position: relative;
   display: inline-block;
@@ -20,6 +28,18 @@ video {
 
 .slider-image-before {
   display: block;
+}
+
+.slider-text-before {
+  position: absolute;
+  top: 37%;
+  left: 32%;
+}
+
+.slider-text-after {
+  position: absolute;
+  top: 37%;
+  left: 29%;
 }
 
 .slider-image-after {
