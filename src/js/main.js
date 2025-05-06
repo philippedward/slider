@@ -3,6 +3,7 @@ var imageAfter = document.querySelector(".slider-image-after");
 var separator = document.querySelector(".slider-separator");
 var textBefore = document.querySelector(".slider-text-before");
 var textAfter = document.querySelector(".slider-text-after");
+var handler = document.querySelector(".slider-handler");
 
 var updatePosition = function () {
   var rawValue = parseInt(range.value);
@@ -23,6 +24,20 @@ var updatePosition = function () {
 
   var normalizedPosition = (limitedValue - minLimit) / (maxLimit - minLimit);
 
+  handler.classList.remove(
+    "slider-handler-left",
+    "slider-handler-middle",
+    "slider-handler-right"
+  );
+
+  if (normalizedPosition < 0.33) {
+    handler.classList.add("slider-handler-left");
+  } else if (normalizedPosition > 0.66) {
+    handler.classList.add("slider-handler-right");
+  } else {
+    handler.classList.add("slider-handler-middle");
+  }
+
   var beforeOpacity, afterOpacity;
 
   if (normalizedPosition <= 0.5) {
@@ -38,5 +53,4 @@ var updatePosition = function () {
 };
 
 updatePosition();
-
 range.addEventListener("input", updatePosition);
