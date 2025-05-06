@@ -1,0 +1,64 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  color: inherit;
+}
+
+img,
+video {
+  display: block;
+  width: 84%;
+}
+
+.slider {
+  position: relative;
+  display: inline-block;
+}
+
+.slider-image-before {
+  display: block;
+}
+
+.slider-image-after {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 50%;
+  height: 100%;
+  object-fit: cover;
+  object-position: left;
+}
+
+.slider-separator {
+  width: 4px;
+  height: 62%;
+  position: absolute;
+  bottom: 10;
+  left: 50%;
+  background: #d00000;
+  transform: translateX(-2px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.slider-handler {
+  width: 60px;
+  height: 60px;
+  background: #d00000;
+  border-radius: 50px;
+  flex-shrink: 0;
+  background-image: url(../img/ellipse-1.png);
+  background-image: url(../img/ellipse-left.png);
+  background-image: url(../img/ellipse-right.png);
+}
+
+.slider-range {
+  position: absolute;
+  inset: 0;
+  opacity: 0;
+}
